@@ -1,0 +1,25 @@
+
+.sidebar {
+    width: 400px;
+   /* background: linear-gradient(to right,rgba(0, 0, 0, 0.89),rgba(0, 0, 0, 0.671),rgba(0, 0, 0, 0)); */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
