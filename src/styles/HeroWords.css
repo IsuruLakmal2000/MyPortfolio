@@ -1,0 +1,161 @@
+.hero {
+  gap: 40px;
+}
+
+.hero-word {
+  padding-top: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  line-height: 1;
+  color: white;
+  text-align: center;
+}
+
+.first-row,
+.second-row,
+.third-row,
+.fourth-row {
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+}
+
+.connect {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+}
+
+.connect-icon {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.connect-icon:hover {
+  color: #00e1ff;
+}
+
+.big-text {
+  font-size: 70px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+.small-text {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+.social-links {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.icon {
+  font-size: 30px;
+}
+
+/* Responsive Media Queries */
+
+/* For tablets and small desktops */
+@media (max-width: 1024px) {
+  .hero-word {
+    padding-top: 150px;
+  }
+
+  .big-text {
+    font-size: 50px; /* Reduce the font size */
+  }
+
+  .small-text {
+    font-size: 14px;
+  }
+
+  .social-links {
+    gap: 15px; /* Decrease the gap */
+  }
+
+  .icon {
+    font-size: 24px; /* Decrease icon size */
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .hero-word {
+    padding-top: 100px;
+    gap: 0px;
+  }
+
+  .big-text {
+    font-size: 40px;
+  }
+
+  .small-text {
+    font-size: 10px;
+  }
+
+  .connect {
+    flex-direction: row;
+    gap: 5px;
+    padding: 13px;
+  }
+
+  .connect-icon {
+    font-size: 10px;
+  }
+
+  .social-links {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .icon {
+    font-size: 20px;
+  }
+}
+
+/* For very small screens (e.g., <480px) */
+@media (max-width: 480px) {
+  .hero-word {
+    padding-top: 50px;
+  }
+
+  .big-text {
+    font-size: 30px;
+  }
+
+  .small-text {
+    font-size: 10px;
+  }
+
+  .social-links {
+    gap: 8px;
+  }
+
+  .icon {
+    font-size: 18px;
+  }
+}

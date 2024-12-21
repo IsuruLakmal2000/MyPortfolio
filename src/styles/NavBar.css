@@ -1,0 +1,62 @@
+/* src/styles/NavBar.css */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo a {
+  color: #fff;
+  margin-left: 40px;
+}
+
+.nav-items {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 15px;
+  justify-content: center;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+}
+
+.nav-items li {
+  margin: 0 20px; /* Equal gap between items */
+}
+
+li,
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+}
+
+.empty {
+  color: #fff;
+  margin-right: 40px;
+}
+
+.nav-items li a:hover {
+  color: #ffd700;
+}
+
+/* For very small screens (e.g., <480px) */
+@media (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+  .empty {
+    display: none;
+  }
+}
