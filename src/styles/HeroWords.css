@@ -77,6 +77,21 @@
   font-size: 30px;
 }
 
+.gradient {
+  height: 100px;
+  position: relative;
+  z-index: 10;
+  margin-bottom: -100px;
+  bottom: 100px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(20, 20, 20, 0.829),
+    rgb(20, 20, 20)
+  );
+  background-blend-mode: overlay;
+}
+
 /* Responsive Media Queries */
 
 /* For tablets and small desktops */
