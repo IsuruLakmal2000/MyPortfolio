@@ -1,6 +1,7 @@
 // src/Component/Biography.tsx
 import React from "react";
-import "../styles/Biography.css";
+import "../styles/Biography/Biography.css";
+import "../styles/Biography/BiographyMobile.css";
 import {
   DiCode,
   DiAndroid,
@@ -13,6 +14,11 @@ import {
   DiUnitySmall,
   DiVisualstudio,
 } from "react-icons/di";
+import { FaJava } from "react-icons/fa";
+import { IoLogoCss3, IoLogoFirebase } from "react-icons/io5";
+import { BsFiletypeScss } from "react-icons/bs";
+import { SiFlutter } from "react-icons/si";
+import { BiLogoSpringBoot } from "react-icons/bi";
 
 const Biography: React.FC = () => {
   const icons = [
@@ -47,22 +53,74 @@ const Biography: React.FC = () => {
       {/* Main content */}
       <div className="info-text">
         <h1>
-          I believe in a user centered design approach, ensuring that every
-          project I work on is tailored to meet the specific needs of its users.
+          "Committed to learning, adapting, and delivering
+          <span className="span-text"> results.</span> "
         </h1>
       </div>
       <div className="my-self">
         <p>
-          I'm a 17 year-old passionate fullstack web developer dedicated to
-          turning ideas into creative solutions. I specialize in creating
-          seamless and intuitive user experiences. I'm involved in every step of
-          the process: from discovery and design to development, testing, and
-          deployment. I focus on delivering high-quality, scalable results that
-          drive positive user experiences.
+          I am a driven and self-motivated professional with a strong ability to
+          tackle challenges independently or collaboratively. Committed to
+          continuous learning and staying at the forefront of emerging
+          technologies, I bring value through innovative solutions and a passion
+          for excellence. Ready to contribute to organizational success with a
+          proactive and results-oriented mindset
         </p>
       </div>
 
-      {/* Custom positioned icons */}
+      <div className="tech-stack">
+        <div>
+          <h1>Technologies</h1>
+        </div>
+
+        <div className="tech-icon-container">
+          <div className="card">
+            <FaJava className="tech-icons" />
+            <span className="subtitle">Java</span>
+          </div>
+          <div className="card">
+            <DiDatabase className="tech-icons" />
+            <span className="subtitle">MySql</span>
+          </div>
+          <div className="card">
+            <DiUnitySmall className="tech-icons" />
+            <span className="subtitle">Unity</span>
+          </div>
+          <div className="card">
+            <DiReact className="tech-icons" />
+            <span className="subtitle">React</span>
+          </div>
+          <div className="card">
+            <DiNodejs className="tech-icons" />
+            <span className="subtitle">NodeJs</span>
+          </div>
+          <div className="card">
+            <DiHtml5 className="tech-icons" />
+            <span className="subtitle">HTML</span>
+          </div>
+          <div className="card">
+            <SiFlutter className="tech-icons" />
+            <span className="subtitle">Flutter</span>
+          </div>
+          <div className="card">
+            <IoLogoCss3 className="tech-icons" />
+            <span className="subtitle">CSS</span>
+          </div>
+          <div className="card">
+            <BsFiletypeScss className="tech-icons" />
+            <span className="subtitle">SCSS</span>
+          </div>
+          <div className="card">
+            <IoLogoFirebase className="tech-icons" />
+            <span className="subtitle">Firebase</span>
+          </div>
+          <div className="card">
+            <BiLogoSpringBoot className="tech-icons" />
+            <span className="subtitle">Springboot</span>
+          </div>
+        </div>
+      </div>
+
       <div className="icon-container">
         {icons.map((Icon, index) => (
           <div

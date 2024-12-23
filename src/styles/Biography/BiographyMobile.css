@@ -1,0 +1,103 @@
+@media (max-width: 1400px) {
+  .info-text {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 28px; /* Adjust font size for smaller screens */
+  }
+
+  .my-self {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 18px; /* Reduce font size for smaller screens */
+  }
+
+  .tech-stack {
+    .tech-icon-container {
+      font-size: 40px; /* Slightly smaller icons */
+      flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
+      gap: 10px; /* Reduce the gap between icons */
+      justify-content: center;
+      .card {
+        max-width: 80px; /* Limit width for smaller cards */
+        .subtitle {
+          font-size: 12px; /* Adjust subtitle font size */
+        }
+      }
+      .tech-icons {
+        border: 1px solid #ccc;
+        border-radius: 20%;
+        padding: 20px;
+      }
+    }
+  }
+
+  .custom-icon {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .info-text {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+  .my-self {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 16px; /* Reduce font size for smaller screens */
+  }
+
+  .tech-stack {
+    .tech-icon-container {
+      font-size: 30px; /* Slightly smaller icons */
+      flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
+      gap: 10px; /* Reduce the gap between icons */
+      justify-content: center;
+      .card {
+        max-width: 80px; /* Limit width for smaller cards */
+        .subtitle {
+          font-size: 12px; /* Adjust subtitle font size */
+        }
+      }
+      .tech-icons {
+        border: 1px solid #ccc;
+        border-radius: 20%;
+        padding: 15px;
+      }
+    }
+  }
+
+  .custom-icon {
+    font-size: 50px; /* Reduce size of background icons */
+  }
+}
+
+@media (max-width: 480px) {
+  .info-text {
+    font-size: 16px; /* Further reduce font size */
+  }
+
+  .my-self {
+    font-size: 14px; /* Further reduce font size */
+  }
+
+  .tech-stack {
+    .tech-icon-container {
+      font-size: 40px; /* Smaller icons */
+      gap: 8px; /* Smaller gap */
+
+      .card {
+        max-width: 70px; /* Smaller card width */
+        .subtitle {
+          font-size: 12px; /* Smaller subtitle */
+        }
+      }
+    }
+  }
+
+  .custom-icon {
+    font-size: 40px; /* Further reduce background icon size */
+  }
+}
