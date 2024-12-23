@@ -3,6 +3,7 @@ import React from "react";
 import NavBar from "./NavBar";
 import HeroSection from "./HeroWords";
 import Biorgraphy from "./Biography";
+import Projects from "./Projects";
 import "../styles/MainPage.css";
 
 const MainPage: React.FC = () => {
@@ -14,6 +15,9 @@ const MainPage: React.FC = () => {
       </div>
       <div className="about-me">
         <Biorgraphy />
+      </div>
+      <div>
+        <Projects />
       </div>
     </>
   );
