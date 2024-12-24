@@ -2,20 +2,67 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 20px;
   align-items: center;
-  background: radial-gradient(
-    circle,
-    rgba(20, 20, 20, 0.8),
-    rgba(0, 0, 0, 0.8)
-  );
-  height: 100vh;
+  background: radial-gradient(circle, rgba(20, 20, 20, 0.8), rgba(0, 0, 0, 1));
+  position: relative;
+  min-height: 100vh;
+  height: auto;
 
   .double-side {
     width: 100%;
 
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 120px;
+  }
+}
+.title {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  z-index: -1; /* Make sure the overlay is behind the content */
+}
+
+.right-side {
+  width: 50%;
+
+  .about-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .title {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+  }
+  .subtitle {
+    margin-top: -20px;
+    font-size: 20px;
+    color: yellow;
+    margin-bottom: 20px;
+  }
+  .description {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .technology {
+    font-size: 16px;
+    color: aqua;
+    font-weight: bolder;
   }
 }
 
@@ -36,31 +83,43 @@
   }
 
   .swiper-slide:nth-child(1n) {
-    background-color: rgb(206, 17, 17);
+    background-image: url("../assets/projects/organic-quest.png");
+    border: 2px solid;
+    border-color: rgb(255, 208, 0);
   }
 
   .swiper-slide:nth-child(2n) {
-    background-color: rgb(0, 140, 255);
+    background-image: url("../assets/projects/online checking.jpg");
+    border: 2px solid;
+    border-color: rgb(0, 253, 84);
   }
 
   .swiper-slide:nth-child(3n) {
-    background-color: rgb(10, 184, 111);
+    background-image: url("../assets/projects/departure.jpg");
+    border: 2px solid;
+    border-color: aqua;
   }
 
   .swiper-slide:nth-child(4n) {
-    background-color: rgb(211, 122, 7);
+    background-image: url("../assets/projects/countdown.jpg");
+    border: 2px solid;
+    border-color: rgb(255, 0, 212);
   }
 
   .swiper-slide:nth-child(5n) {
-    background-color: rgb(118, 163, 12);
+    background-image: url("../assets/projects/blade.jpg");
+    border: 2px solid;
+    border-color: rgb(255, 94, 0);
   }
 
   .swiper-slide:nth-child(6n) {
-    background-color: rgb(180, 10, 47);
+    background-image: url("../assets/projects/osindi.jpg");
+    border: 2px solid;
+    border-color: rgb(97, 255, 49);
   }
 
   .swiper-slide:nth-child(7n) {
-    background-color: rgb(35, 99, 19);
+    background-image: url("../assets/projects/water.jpg");
   }
 
   .swiper-slide:nth-child(8n) {
@@ -72,6 +131,69 @@
   }
 
   .swiper-slide:nth-child(10n) {
-    background-color: rgb(54, 94, 77);
+    background-image: url("../assets/projects/legacy defenders.jpg");
+  }
+}
+
+@media (max-width: 1500px) {
+  .left-side .swiper {
+    height: 450px;
+    width: 500px;
+  }
+
+  .swiper-slide {
+    font-size: 18px; /* Reduce font size in the slides */
+  }
+
+  .title h1 {
+    /* Even smaller title for very small screens */
+  }
+
+  .about-project {
+    font-size: 0.8rem; /* Further reduce text size in the project description */
+  }
+}
+@media (max-width: 1000px) {
+  .double-side {
+    flex-direction: column; /* Stack the left and right sections vertically */
+    align-items: center; /* Center content */
+  }
+
+  .left-side,
+  .right-side {
+    width: auto; /* Full width for both sides */
+    padding: 30px;
+  }
+
+  .left-side .swiper {
+    height: 400px;
+    width: 680px;
+  }
+
+  .title h1 {
+    font-size: 1.5rem; /* Smaller font for smaller screens */
+  }
+
+  .about-project {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 760px) {
+  .left-side .swiper {
+    height: 250px;
+    width: 300px;
+  }
+
+  .swiper-slide {
+    font-size: 18px; /* Reduce font size in the slides */
+  }
+
+  .title h1 {
+    font-size: 1.2rem; /* Even smaller title for very small screens */
+  }
+
+  .about-project {
+    font-size: 0.8rem; /* Further reduce text size in the project description */
   }
 }

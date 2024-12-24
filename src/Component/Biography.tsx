@@ -14,11 +14,13 @@ import {
   DiUnitySmall,
   DiVisualstudio,
 } from "react-icons/di";
-import { FaJava } from "react-icons/fa";
+import { FaJava, FaAws } from "react-icons/fa";
 import { IoLogoCss3, IoLogoFirebase } from "react-icons/io5";
 import { BsFiletypeScss } from "react-icons/bs";
-import { SiFlutter } from "react-icons/si";
+import { SiFlutter, SiDart, SiJira, SiPhp } from "react-icons/si";
 import { BiLogoSpringBoot } from "react-icons/bi";
+import { FaGitAlt } from "react-icons/fa6";
+import { RiAngularjsFill } from "react-icons/ri";
 
 const Biography: React.FC = () => {
   const icons = [
@@ -118,7 +120,40 @@ const Biography: React.FC = () => {
             <BiLogoSpringBoot className="tech-icons" />
             <span className="subtitle">Springboot</span>
           </div>
+          <div className="card">
+            <FaAws className="tech-icons" />
+            <span className="subtitle">AWS</span>
+          </div>
+          <div className="card">
+            <SiDart className="tech-icons" />
+            <span className="subtitle">Dart</span>
+          </div>
+          <div className="card">
+            <DiJavascript1 className="tech-icons" />
+            <span className="subtitle">Javascript</span>
+          </div>
+          <div className="card">
+            <SiJira className="tech-icons" />
+            <span className="subtitle">Jira</span>
+          </div>
+          <div className="card">
+            <FaGitAlt className="tech-icons" />
+            <span className="subtitle">Git</span>
+          </div>
+          <div className="card">
+            <RiAngularjsFill className="tech-icons" />
+            <span className="subtitle">Angular</span>
+          </div>
+          <div className="card">
+            <SiPhp className="tech-icons" />
+            <span className="subtitle">Flutter</span>
+          </div>
+          <div className="card">
+            <IoLogoCss3 className="tech-icons" />
+            <span className="subtitle">CSS</span>
+          </div>
         </div>
+        <div className="tech-icon-container"></div>
       </div>
 
       <div className="icon-container">
