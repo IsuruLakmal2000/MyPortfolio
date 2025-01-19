@@ -1,4 +1,4 @@
-@media (max-width: 1400px) {
+@media (max-width: 1024px) {
   .info-text {
     padding-left: 10%;
     padding-right: 10%;
@@ -17,6 +17,8 @@
       flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
       gap: 10px; /* Reduce the gap between icons */
       justify-content: center;
+      padding-left: 10px;
+      padding-right: 10px;
       .card {
         max-width: 80px; /* Limit width for smaller cards */
         .subtitle {
@@ -26,7 +28,7 @@
       .tech-icons {
         border: 1px solid #ccc;
         border-radius: 20%;
-        padding: 20px;
+        padding: 10px;
       }
     }
   }
@@ -35,7 +37,6 @@
     font-size: 40px;
   }
 }
-
 @media (max-width: 768px) {
   .info-text {
     padding-left: 10%;
@@ -64,7 +65,7 @@
       .tech-icons {
         border: 1px solid #ccc;
         border-radius: 20%;
-        padding: 15px;
+        padding: 5px;
       }
     }
   }

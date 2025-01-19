@@ -1,0 +1,77 @@
+.workExp-section {
+  position: relative;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/plane.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 30%;
+}
+
+.workExp-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.884);
+  z-index: 1;
+}
+
+.workExp-section h1,
+.workExp-section .company-detail {
+  position: relative; /* Positioning context for the text */
+  z-index: 2; /* Ensure text is above the overlay */
+}
+.company-detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.logo img {
+  height: 200px;
+  width: auto;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  h2 {
+    color: aqua;
+  }
+  .place {
+    color: yellow;
+    font-weight: bold;
+  }
+}
+.sm {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .bg {
+    display: none;
+  }
+  .sm {
+    display: block;
+  }
+}

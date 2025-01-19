@@ -46,23 +46,31 @@
   height: 100%;
   pointer-events: none; /* Icons do not block interactions */
 }
-.tech-stack {
-  display: flex;
-  flex-direction: column;
-  position: relative;
 
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.tech-stack {
   .tech-icon-container {
-    font-size: 60px;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
+    overflow: hidden;
+    padding-left: 100px;
+    padding-right: 100px;
     .card {
       display: flex;
+      align-items: center;
       flex-direction: column;
+      position: relative;
+      font-size: 50px;
+      margin: 10px 20px;
+
       transition: transform 0.3s ease, color 0.3s ease;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+
       .subtitle {
         font-size: 20px;
         font-weight: normal;
@@ -81,6 +89,19 @@
       border-radius: 20%;
       padding: 20px;
     }
+  }
+}
+
+.tech-icon-wrapper {
+  display: ruby;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* Adjust based on the number of icons */
   }
 }
 

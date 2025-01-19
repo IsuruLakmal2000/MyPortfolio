@@ -14,8 +14,8 @@
 
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 120px;
+    justify-content: space-between;
+    gap: 0px;
   }
 }
 .title {
@@ -36,7 +36,8 @@
 
 .right-side {
   width: 50%;
-
+  padding-left: 50px;
+  padding-right: 50px;
   .about-project {
     display: flex;
     flex-direction: column;
@@ -67,9 +68,18 @@
 }
 
 .left-side {
+  padding-left: 100px;
   .swiper {
     width: 600px;
     height: 750px;
+  }
+
+  .inside-card {
+    position: relative;
+    align-self: self-end;
+    color: yellow;
+    font-weight: normal;
+    padding-bottom: 10px;
   }
 
   .swiper-slide {
@@ -84,6 +94,7 @@
 
   .swiper-slide:nth-child(1n) {
     background-image: url("../assets/projects/organic-quest.png");
+    background-size: cover;
     border: 2px solid;
     border-color: rgb(255, 208, 0);
   }
@@ -91,30 +102,35 @@
   .swiper-slide:nth-child(2n) {
     background-image: url("../assets/projects/online checking.jpg");
     border: 2px solid;
+    background-size: cover;
     border-color: rgb(0, 253, 84);
   }
 
   .swiper-slide:nth-child(3n) {
     background-image: url("../assets/projects/departure.jpg");
     border: 2px solid;
+    background-size: cover;
     border-color: aqua;
   }
 
   .swiper-slide:nth-child(4n) {
     background-image: url("../assets/projects/countdown.jpg");
     border: 2px solid;
+    background-size: cover;
     border-color: rgb(255, 0, 212);
   }
 
   .swiper-slide:nth-child(5n) {
     background-image: url("../assets/projects/blade.jpg");
     border: 2px solid;
+    background-size: cover;
     border-color: rgb(255, 94, 0);
   }
 
   .swiper-slide:nth-child(6n) {
     background-image: url("../assets/projects/osindi.jpg");
     border: 2px solid;
+    background-size: cover;
     border-color: rgb(97, 255, 49);
   }
 
@@ -123,7 +139,7 @@
   }
 
   .swiper-slide:nth-child(8n) {
-    background-color: rgb(0, 68, 255);
+    background-image: url("../assets/projects/legacy defenders.jpg");
   }
 
   .swiper-slide:nth-child(9n) {
@@ -131,14 +147,13 @@
   }
 
   .swiper-slide:nth-child(10n) {
-    background-image: url("../assets/projects/legacy defenders.jpg");
   }
 }
 
 @media (max-width: 1500px) {
   .left-side .swiper {
-    height: 450px;
-    width: 500px;
+    width: 400px;
+    height: 550px;
   }
 
   .swiper-slide {
@@ -153,33 +168,50 @@
     font-size: 0.8rem; /* Further reduce text size in the project description */
   }
 }
-@media (max-width: 1000px) {
+
+@media (max-width: 1024px) {
   .double-side {
-    flex-direction: column; /* Stack the left and right sections vertically */
-    align-items: center; /* Center content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
   }
 
-  .left-side,
-  .right-side {
-    width: auto; /* Full width for both sides */
+  .left-side {
     padding: 30px;
   }
 
-  .left-side .swiper {
-    height: 400px;
-    width: 680px;
+  .right-side {
+    width: 80%;
+    .about-project {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      align-items: center;
+    }
   }
 
   .title h1 {
-    font-size: 1.5rem; /* Smaller font for smaller screens */
+    font-size: 1.5rem;
+    /* Smaller font for smaller screens */
   }
 
   .about-project {
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Stacks children vertically */
+    align-items: start;
+    justify-content: center; /* Centers children vertically */
+    text-align: center; /* Centers text within children */
+
+    margin: 0 auto; /* Centers the container itself */
+
     font-size: 0.9rem; /* Adjust font size for smaller screens */
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .left-side .swiper {
     height: 250px;
     width: 300px;

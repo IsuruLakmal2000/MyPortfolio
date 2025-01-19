@@ -55,6 +55,7 @@ const projectDetails = [
     technology: " Flutter ,Firebase realtime database",
     backgroundImage: countdown,
   },
+
   {
     title: "Blade",
     subtitle: "Saloon Finding and Managing Mobile App (Individual Project)",
@@ -81,6 +82,15 @@ const projectDetails = [
     backgroundColor: "rgb(211, 122, 7)",
     technology: " Flutter, SQLite",
     backgroundImage: water,
+  },
+  {
+    title: "Legacy Defenders",
+    subtitle: "A Strategic tower defence mobile game",
+    description:
+      "Legacy Defenders is a mobile tower defense game where players protect their kingdom from waves of enemies by strategically upgrading existing turrets and unlocking new ones. The game challenges players to adapt their strategies as they face increasingly difficult foes, combining engaging gameplay with a focus on tactical decision-making. This project highlights my skills in game design and development, showcasing my passion for creating immersive and dynamic gaming experiences.",
+    // backgroundColor: "rgb(0, 140, 255)",
+    technology: " Unity game engine",
+    backgroundImage: legacy,
   },
   // Add more projects as needed...
 ];
@@ -112,7 +122,9 @@ const Projects: React.FC = () => {
               className="mySwiper"
             >
               {projectDetails.map((project, index) => (
-                <SwiperSlide key={index}></SwiperSlide>
+                <SwiperSlide key={index}>
+                  <div className="inside-card">Project No: {index + 1}</div>
+                </SwiperSlide>
               ))}
             </Swiper>
           </div>
@@ -129,7 +141,16 @@ const Projects: React.FC = () => {
                 <span>{currentProject.description}</span>
               </div>
               <div className="technology">
-                <span>Technologies used: {currentProject.technology}</span>
+                <span>
+                  Technologies used:{" "}
+                  <span
+                    style={{
+                      color: "yellow",
+                    }}
+                  >
+                    {currentProject.technology}
+                  </span>
+                </span>
               </div>
               <div className="additional-details">
                 {/* Additional buttons or features can be added here */}
