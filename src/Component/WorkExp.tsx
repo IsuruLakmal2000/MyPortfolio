@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "../styles/WorkExp.css";
 import isa from "../assets/isa-logo.png";
 

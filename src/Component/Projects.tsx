@@ -121,7 +121,7 @@ const Projects: React.FC = () => {
               onSlideChange={handleSlideChange}
               className="mySwiper"
             >
-              {projectDetails.map((project, index) => (
+              {projectDetails.map((_, index) => (
                 <SwiperSlide key={index}>
                   <div className="inside-card">Project No: {index + 1}</div>
                 </SwiperSlide>

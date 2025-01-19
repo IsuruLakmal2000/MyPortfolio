@@ -1,6 +1,6 @@
 // src/Component/Biography.tsx
-import React, { useEffect } from "react";
-import { gsap } from "gsap";
+import React from "react";
+
 import "../styles/Biography/Biography.css";
 import "../styles/Biography/BiographyMobile.css";
 import {
