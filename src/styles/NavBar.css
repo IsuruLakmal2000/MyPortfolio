@@ -11,7 +11,7 @@
   z-index: 1000;
 }
 
-.logo a {
+.site-logo a {
   color: #fff;
   margin-left: 40px;
 }
@@ -49,7 +49,7 @@ a {
 
 /* For very small screens (e.g., <480px) */
 @media (max-width: 768px) {
-  .logo {
+  .site-logo {
     display: none;
   }
   .navbar {

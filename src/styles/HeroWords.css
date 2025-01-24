@@ -68,6 +68,7 @@
 
 .social-links {
   margin-top: 100px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -152,8 +153,10 @@
   }
 }
 
-/* For very small screens (e.g., <480px) */
-@media (max-width: 480px) {
+/* For very small screens (e.g., <480px) @media (max-width: 480px) {
+  .hero {
+    height: 400px;
+  }
   .hero-word {
     padding-top: 50px;
   }
@@ -173,4 +176,4 @@
   .icon {
     font-size: 18px;
   }
-}
+} */

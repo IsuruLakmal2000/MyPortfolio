@@ -19,3 +19,27 @@ html {
   text-align: center;
   width: 100%;
 }
+@media (max-width: 480px) {
+  .hero {
+    min-height: 50vh;
+  }
+  .hero-word {
+    padding-top: 200px;
+  }
+
+  .big-text {
+    font-size: 30px;
+  }
+
+  .small-text {
+    font-size: 10px;
+  }
+
+  .social-links {
+    gap: 8px;
+  }
+
+  .icon {
+    font-size: 18px;
+  }
+}

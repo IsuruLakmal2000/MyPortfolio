@@ -1,4 +1,4 @@
-@media (max-width: 1024px) {
+@media (max-width: 1500px) {
   .info-text {
     padding-left: 10%;
     padding-right: 10%;
@@ -8,7 +8,42 @@
   .my-self {
     padding-left: 10%;
     padding-right: 10%;
-    font-size: 18px; /* Reduce font size for smaller screens */
+    font-size: 16px;
+  }
+
+  .tech-stack {
+    .tech-icon-container {
+      font-size: 30px; /* Slightly smaller icons */
+      flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
+      gap: 10px; /* Reduce the gap between icons */
+      justify-content: center;
+      padding-left: 10px;
+      padding-right: 10px;
+      .card {
+        max-width: 80px; /* Limit width for smaller cards */
+        .subtitle {
+          font-size: 12px; /* Adjust subtitle font size */
+        }
+      }
+      .tech-icons {
+        border: 1px solid #ccc;
+        border-radius: 15%;
+        padding: 7px;
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .info-text {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+
+  .my-self {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 15px; /* Reduce font size for smaller screens */
   }
 
   .tech-stack {
@@ -76,21 +111,27 @@
 }
 
 @media (max-width: 480px) {
+  .biography-section {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
   .info-text {
-    font-size: 16px; /* Further reduce font size */
+    font-size: 14px; /* Further reduce font size */
   }
 
   .my-self {
-    font-size: 14px; /* Further reduce font size */
+    font-size: 12px; /* Further reduce font size */
   }
 
   .tech-stack {
     .tech-icon-container {
-      font-size: 40px; /* Smaller icons */
+      font-size: 30px; /* Smaller icons */
       gap: 8px; /* Smaller gap */
-
+      .tech-icons {
+        font-size: 40px;
+      }
       .card {
-        max-width: 70px; /* Smaller card width */
+        max-width: 30px; /* Smaller card width */
         .subtitle {
           font-size: 12px; /* Smaller subtitle */
         }

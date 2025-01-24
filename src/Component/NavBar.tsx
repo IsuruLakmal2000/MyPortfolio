@@ -2,7 +2,7 @@ import "../styles/NavBar.css";
 const NavBar: React.FC = () => {
   return (
     <nav className="navbar">
-      <div className="logo">
+      <div className="site-logo">
         <a href="#">I5URU</a>
       </div>
       <div className="nav-items">
