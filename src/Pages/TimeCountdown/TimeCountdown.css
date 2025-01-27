@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+}
+
+p {
+  line-height: 1.5;
+}
+
+.highlight {
+  background-color: #6b6400;
+  padding: 10px;
+}
