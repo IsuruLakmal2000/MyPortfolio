@@ -3,7 +3,7 @@ const NavBar: React.FC = () => {
   return (
     <nav className="navbar">
       <div className="site-logo">
-        <a href="#">I5URU</a>
+        <a href="#/organic-quest">I5URU</a>
       </div>
       <div className="nav-items">
         <li>
