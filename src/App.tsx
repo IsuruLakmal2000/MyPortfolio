@@ -1,7 +1,7 @@
 import MainPage from "./Component/MainPage";
 import OrganicQuest from "./Pages/Organic-privacy/OrganicquestPrivacyPolicy";
 import TimeCountdown from "./Pages/TimeCountdown/TimecountdownPolicy";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 
 function App() {
