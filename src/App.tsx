@@ -1,7 +1,7 @@
 import MainPage from "./Component/MainPage";
 import OrganicQuest from "./Pages/Organic-privacy/OrganicquestPrivacyPolicy";
 import TimeCountdown from "./Pages/TimeCountdown/TimecountdownPolicy";
-import OrganicTheory from "./Pages/Organic-theory/OrganicTheoryDirectory";
+
 import Theory1 from "./Pages/Organic-theory/Theory/1/Theory1";
 import Theory2 from "./Pages/Organic-theory/Theory/2/Theory2";
 import Theory3 from "./Pages/Organic-theory/Theory/3/Theory3";
