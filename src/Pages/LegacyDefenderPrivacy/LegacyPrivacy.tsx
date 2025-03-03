@@ -1,5 +1,5 @@
 import React from "react";
-import "./LegacyPrivacy.css";
+import "./legacyPrivacy.css";
 
 const PrivacyPolicy: React.FC = () => {
   return (
