@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "../styles/HeroWords.css";
 import {
   FaLinkedin,
@@ -9,48 +10,68 @@ import {
 } from "react-icons/fa";
 
 const HeroWords: React.FC = () => {
+  // Variants for fade-in animation
+  const fadeInVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+  };
+
   return (
     <>
       <div className="hero">
-        <div className="hero-word">
-          <div className="first-row">
+        <motion.div
+          className="hero-word"
+          initial="hidden"
+          animate="visible"
+          variants={fadeInVariants}
+        >
+          <motion.div className="first-row" variants={fadeInVariants}>
             <span className="big-text">SOFTWARE</span>
             <div className="location">
               <span className="small-text">Based on</span>
               <span className="small-text">Colombo</span>
             </div>
-          </div>
-          <div className="second-row">
+          </motion.div>
+          <motion.div className="second-row" variants={fadeInVariants}>
             <span className="big-text">ENGINEER</span>
-          </div>
-          <div className="third-row">
+          </motion.div>
+          <motion.div className="third-row" variants={fadeInVariants}>
             <div className="connect">
               <FaLinkedin className="connect-icon" />
               <span className="small-text">Let's Connect</span>
             </div>
-            <span className="big-text">FULL STACK</span>
-          </div>
-          <div className="fourth-row">
+            <span className="big-text" style={{ color: "#f8fc01" }}>
+              FULL STACK
+            </span>
+          </motion.div>
+          <motion.div className="fourth-row" variants={fadeInVariants}>
             <span className="big-text">GAME DEVELOPER</span>
-          </div>
-        </div>
-        <div className="social-links">
-          <div className="linkedin">
-            <FaLinkedin className="icon" />
-          </div>
-          <div className="github">
+          </motion.div>
+        </motion.div>
+        <motion.div
+          className="social-links"
+          initial="hidden"
+          animate="visible"
+          variants={fadeInVariants}
+        >
+          <motion.div className="linkedin" variants={fadeInVariants}>
+            <a href="https://www.linkedin.com/your-profile-url" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin className="icon" />
+            </a>
+          </motion.div>
+          <motion.div className="github" variants={fadeInVariants}>
             <FaGithub className="icon" />
-          </div>
-          <div className="twitter">
+          </motion.div>
+          <motion.div className="twitter" variants={fadeInVariants}>
             <FaTwitter className="icon" />
-          </div>
-          <div className="instagram">
+          </motion.div>
+          <motion.div className="instagram" variants={fadeInVariants}>
             <FaInstagramSquare className="icon" />
-          </div>
-          <div className="googleplay">
+          </motion.div>
+          <motion.div className="googleplay" variants={fadeInVariants}>
             <FaGooglePlay className="icon" />
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
       {/* <div className="gradient">
         <div className="container"></div>

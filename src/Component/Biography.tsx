@@ -1,5 +1,6 @@
-// src/Component/Biography.tsx
 import React from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 import "../styles/Biography/Biography.css";
 import "../styles/Biography/BiographyMobile.css";
@@ -51,16 +52,37 @@ const Biography: React.FC = () => {
     { top: "5%", left: "75%" },
   ];
 
+  // Variants for fade-in animation
+  const fadeInVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+  };
+
+  // Intersection observer for fade-in effect
+  const { ref: infoTextRef, inView: infoTextInView } = useInView({ triggerOnce: true });
+  const { ref: techStackRef, inView: techStackInView } = useInView({ triggerOnce: true });
+
   return (
     <div className="biography-section">
       {/* Main content */}
-      <div className="info-text">
+      <motion.div
+        className="info-text"
+        ref={infoTextRef}
+        initial="hidden"
+        animate={infoTextInView ? "visible" : "hidden"}
+        variants={fadeInVariants}
+      >
         <h1>
           "Committed to learning, adapting, and delivering
           <span className="span-text"> results.</span> "
         </h1>
-      </div>
-      <div className="my-self">
+      </motion.div>
+      <motion.div
+        className="my-self"
+        initial="hidden"
+        animate={infoTextInView ? "visible" : "hidden"}
+        variants={fadeInVariants}
+      >
         <p>
           I am a driven and self-motivated professional with a strong ability to
           tackle challenges independently or collaboratively. Committed to
@@ -69,9 +91,15 @@ const Biography: React.FC = () => {
           for excellence. Ready to contribute to organizational success with a
           proactive and results-oriented mindset
         </p>
-      </div>
+      </motion.div>
 
-      <div className="tech-stack">
+      <motion.div
+        className="tech-stack"
+        ref={techStackRef}
+        initial="hidden"
+        animate={techStackInView ? "visible" : "hidden"}
+        variants={fadeInVariants}
+      >
         <div>
           <h1>Technologies</h1>
         </div>
@@ -150,23 +178,23 @@ const Biography: React.FC = () => {
               <SiPhp className="tech-icons" />
               <span className="subtitle">Flutter</span>
             </div>
-            {/* <div className="card item18">
-            <IoLogoCss3 className="tech-icons" />
-            <span className="subtitle">CSS</span>
-          </div> */}
           </div>
         </div>
-      </div>
+      </motion.div>
 
       <div className="icon-container">
         {icons.map((Icon, index) => (
-          <div
+          <motion.div
             key={index}
             className="custom-icon"
             style={customPositions[index]}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInVariants}
           >
             {Icon}
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

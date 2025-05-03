@@ -10,8 +10,8 @@
   height: auto;
   background: radial-gradient(
     circle,
-    rgba(20, 20, 20, 0.8),
-    rgba(0, 0, 0, 0.8)
+    rgba(0, 0, 0, 0.8),
+    rgb(0, 0, 0)
   );
 
   color: white;
@@ -67,7 +67,7 @@
       align-items: center;
       flex-direction: column;
       position: relative;
-      font-size: 50px;
+      font-size: 30px;
       margin: 10px 20px;
 
       transition: transform 0.3s ease, color 0.3s ease;

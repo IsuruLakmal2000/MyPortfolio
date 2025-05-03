@@ -2,5 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 
 body {
+  background-image: linear-gradient(to bottom, rgb(248, 246, 246), rgb(181, 204, 204));
   font-family: "Montserrat", serif;
+  overflow: visible;
+}
+h1{
+  color: white;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import "./legacyPrivacy.css";
 
-const PrivacyPolicy: React.FC = () => {
+const LegacyPrivacyPolicy: React.FC = () => {
   return (
     <div className="container">
       <h1>Privacy Policy</h1>
@@ -60,4 +60,4 @@ const PrivacyPolicy: React.FC = () => {
   );
 };
 
-export default PrivacyPolicy;
+export default LegacyPrivacyPolicy;

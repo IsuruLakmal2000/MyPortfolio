@@ -41,7 +41,7 @@
 
 .connect-icon {
   font-size: 24px;
-  color: white;
+  color: #00e1ff;
   cursor: pointer;
   transition: color 0.3s ease;
 }
@@ -60,10 +60,11 @@
 
 .small-text {
   font-size: 16px;
-  font-weight: normal;
+  font-weight: bold;
   margin: 0;
   padding: 0;
   line-height: 1;
+  color:  #00e1ff;
 }
 
 .social-links {
@@ -76,6 +77,13 @@
 
 .icon {
   font-size: 30px;
+  cursor: pointer; /* Make the icons clickable */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.icon:hover {
+  transform: scale(1.2); /* Enlarge the icon on hover */
+  color: #00e1ff; /* Optional: Change color on hover */
 }
 
 .gradient {
@@ -131,6 +139,7 @@
 
   .small-text {
     font-size: 10px;
+   
   }
 
   .connect {
