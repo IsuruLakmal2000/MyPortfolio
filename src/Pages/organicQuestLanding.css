@@ -1,0 +1,274 @@
+/* Container */
+.questify-container {
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.questify-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20%;
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.questify-logo {
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.questify-logo-image {
+  width: 150px;
+  height: auto;
+}
+.questify-nav {
+  display: flex;
+  gap: 16px;
+}
+
+.questify-nav-link {
+  text-decoration: none;
+  color: #333333;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.questify-nav-link:hover {
+  color: #28a745;
+}
+
+/* Hero Section */
+.questify-hero {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 80px 16px;
+  background: linear-gradient(to bottom, #ffd6e7, #ffffff);
+}
+.questify-hero-title {
+  font-size: 54px;
+  font-weight: bold;
+  color: transparent;
+  background-image: linear-gradient(to right, #e91e63, #ff9800);
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: gradientAnimation 4s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+.questify-highlight {
+  color: inherit; /* Ensures it inherits the gradient animation from the parent */
+}
+
+.questify-hero-description {
+  margin-top: 16px;
+  font-size: 18px;
+  color: #555555;
+}
+
+.questify-hero-buttons {
+  margin-top: 24px;
+}
+
+.questify-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.questify-btn-primary {
+  width: 300px;
+  background: #ff004c;
+  color: #ffffff;
+}
+
+.questify-btn-primary:hover {
+  background: #e68900;
+}
+
+.questify-btn-secondary {
+  background: #f5f5f5;
+  color: #555555;
+}
+
+.questify-btn-secondary:hover {
+  background: #e0e0e0;
+}
+
+/* Features Section */
+.questify-features {
+  padding: 80px 20%;
+  background: #ffffff;
+  text-align: center;
+}
+
+.questify-section-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #e91e63;
+}
+
+.questify-feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.questify-feature-item {
+  flex: 1;
+  min-width: 250px;
+  padding: 24px;
+  background: #fdf4eb;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.questify-feature-icon {
+  font-size: 50px;
+}
+
+.questify-feature-title {
+  margin-top: 16px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #e91e63;
+}
+
+.questify-feature-description {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #555555;
+}
+
+/* Testimonials */
+.questify-testimonials {
+  padding: 80px 20%;
+  background: #ffe6f0;
+  text-align: center;
+}
+
+.questify-testimonial-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.questify-testimonial-item {
+  flex: 1;
+  min-width: 250px;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.questify-testimonial-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+  object-fit: cover;
+}
+
+.questify-testimonial-rating {
+  color: #ffc107;
+  font-size: 20px;
+}
+
+.questify-testimonial-quote {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #555555;
+  font-style: italic;
+}
+
+.questify-testimonial-name {
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #e91e63;
+}
+
+/* Download Section */
+.questify-download {
+  padding: 80px 16px;
+  background: #e6ffe6;
+  text-align: center;
+}
+
+.questify-download-description {
+  margin-top: 16px;
+  font-size: 18px;
+  color: #555555;
+}
+
+.questify-download-buttons {
+  margin-top: 24px;
+}
+
+.questify-download-preview {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.questify-download-image {
+  width: 150px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.questify-footer {
+  height: 30vh;
+  padding: 16px;
+  background: #e91e63;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.questify-footer-links {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.questify-footer-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.questify-footer-link:hover {
+  text-decoration: underline;
+}
