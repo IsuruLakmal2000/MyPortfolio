@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './organicQuestLanding.css';
 import logo from '../assets/projects/questlogo.png';
 const QuestifyLandingPage = () => {
@@ -28,7 +28,7 @@ const QuestifyLandingPage = () => {
         </p>
         <div className="questify-hero-buttons">
           <button className="questify-btn questify-btn-primary">Get the App</button>
-          
+
         </div>
       </section>
 
