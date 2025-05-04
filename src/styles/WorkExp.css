@@ -36,6 +36,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  color: wheat  ;
   gap: 50px;
 }
 .logo img {
