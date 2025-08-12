@@ -1,18 +1,30 @@
+import React from "react";
 import "../styles/NavBar.css";
 
 const NavBar: React.FC = () => {
+  const handleSmoothScroll = (targetId: string) => {
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      const offsetTop = targetElement.offsetTop - 100; // 100px offset for navbar
+      window.scrollTo({
+        top: offsetTop,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
     <div className="navbar-wrapper">
       <nav className="navbar">
         <div className="nav-items">
           <li>
-            <a href="#">Home</a>
+            <button onClick={() => handleSmoothScroll('home')}>Home</button>
           </li>
           <li>
-            <a href="#">Projects</a>
+            <button onClick={() => handleSmoothScroll('projects')}>Projects</button>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <button onClick={() => handleSmoothScroll('contact')}>Contact</button>
           </li>
         </div>
       </nav>

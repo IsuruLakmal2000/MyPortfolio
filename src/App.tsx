@@ -2,7 +2,7 @@ import MainPage from "./Component/MainPage";
 import OrganicQuest from "./Pages/Organic-privacy/OrganicquestPrivacyPolicy";
 import TimeCountdown from "./Pages/TimeCountdown/TimecountdownPolicy";
 import LegacyPrivacy from "./Pages/LegacyDefenderPrivacy/LegacyPrivacy";
-import WaterTrcker from "./Pages/WaterTrackerPrivacy/WaterTrackerPrivacy";
+import WaterTracker from "./Pages/WaterTrackerPrivacy/WaterTrackerPrivacy";
 import OrganicquestLandingPage from "./Pages/OrganicquestLanding";
 
 import Theory1 from "./Pages/Organic-theory/Theory/1/Theory1";
@@ -42,7 +42,7 @@ function App() {
         <Route path="/organic-quest" element={<OrganicQuest />} />
         <Route path="/timecountdown" element={<TimeCountdown />} />
         <Route path="/legacy-privacy" element={<LegacyPrivacy />} />
-        <Route path="/water-tracker" element={<WaterTrcker />} />
+        <Route path="/water-tracker" element={<WaterTracker />} />
         <Route path="/OrganicQuest" element={<OrganicquestLandingPage />} />
         <Route path="/organic-theory/1" element={<Theory1 />} />
         <Route path="/organic-theory/2" element={<Theory2 />} />

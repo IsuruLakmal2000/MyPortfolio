@@ -1,0 +1,120 @@
+/* Cursor gradient effect styles */
+.cursor-gradient {
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(
+    circle,
+    rgba(139, 69, 119, 0.2) 0%,
+    rgba(111, 55, 96, 0.15) 25%,
+    rgba(88, 44, 76, 0.1) 50%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease, transform 0.1s ease;
+  opacity: 0;
+  mix-blend-mode: screen;
+}
+
+.cursor-gradient-secondary {
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(
+    circle,
+    rgba(176, 88, 148, 0.08) 0%,
+    rgba(132, 66, 111, 0.04) 30%,
+    rgba(99, 49, 83, 0.02) 50%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.4s ease, transform 0.15s ease;
+  opacity: 0;
+  mix-blend-mode: screen;
+}
+
+.cursor-gradient.moving {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.cursor-gradient-secondary.moving {
+  opacity: 0.6;
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* Hovering state for interactive elements - just scale, no color change */
+.cursor-gradient.hovering {
+  transform: translate(-50%, -50%) scale(1.3);
+  opacity: 1;
+}
+
+.cursor-gradient-secondary.hovering {
+  transform: translate(-50%, -50%) scale(1.1);
+  opacity: 0.8;
+}
+
+/* Enhanced cursor effects on hover */
+.cursor-gradient:hover,
+.cursor-gradient-secondary:hover {
+  opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cursor-gradient {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .cursor-gradient-secondary {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cursor-gradient {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .cursor-gradient-secondary {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/* Hide on touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .cursor-gradient,
+  .cursor-gradient-secondary {
+    display: none;
+  }
+}
+
+/* Pulse animation for idle state */
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.3;
+  }
+}
+
+.cursor-gradient:not(.moving):not(.hovering) {
+  animation: pulse 3s ease-in-out infinite;
+}

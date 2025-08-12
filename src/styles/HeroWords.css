@@ -86,6 +86,14 @@
   color: #00e1ff; /* Optional: Change color on hover */
 }
 
+.small-icon {
+  font-size: 24px; /* Smaller size for the social icons */
+}
+
+.small-icon:hover {
+  transform: scale(1.1); /* Slightly smaller hover effect */
+}
+
 .gradient {
   height: 100px;
   position: relative;
@@ -124,6 +132,10 @@
   .icon {
     font-size: 24px; /* Decrease icon size */
   }
+
+  .small-icon {
+    font-size: 20px; /* Smaller size for mobile */
+  }
 }
 
 /* For mobile devices */
@@ -159,6 +171,10 @@
 
   .icon {
     font-size: 20px;
+  }
+
+  .small-icon {
+    font-size: 18px; /* Even smaller for very small screens */
   }
 }
 

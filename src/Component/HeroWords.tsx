@@ -4,9 +4,7 @@ import "../styles/HeroWords.css";
 import {
   FaLinkedin,
   FaGithub,
-  FaTwitter,
   FaInstagramSquare,
-  FaGooglePlay,
 } from "react-icons/fa";
 
 const HeroWords: React.FC = () => {
@@ -56,20 +54,14 @@ const HeroWords: React.FC = () => {
         >
           <motion.div className="linkedin" variants={fadeInVariants}>
             <a href="https://www.linkedin.com/your-profile-url" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin className="icon" />
+              <FaLinkedin className="icon small-icon" />
             </a>
           </motion.div>
           <motion.div className="github" variants={fadeInVariants}>
-            <FaGithub className="icon" />
-          </motion.div>
-          <motion.div className="twitter" variants={fadeInVariants}>
-            <FaTwitter className="icon" />
+            <FaGithub className="icon small-icon" />
           </motion.div>
           <motion.div className="instagram" variants={fadeInVariants}>
-            <FaInstagramSquare className="icon" />
-          </motion.div>
-          <motion.div className="googleplay" variants={fadeInVariants}>
-            <FaGooglePlay className="icon" />
+            <FaInstagramSquare className="icon small-icon" />
           </motion.div>
         </motion.div>
       </div>

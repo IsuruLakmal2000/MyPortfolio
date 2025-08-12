@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { EffectCards } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import type { Swiper as SwiperType } from "swiper";
 
 import "swiper/css";
 import "swiper/css/effect-cards";
@@ -97,18 +98,14 @@ const projectDetails = [
 const Projects: React.FC = () => {
   const [currentProject, setCurrentProject] = useState(projectDetails[0]);
 
-  const handleSlideChange = (swiper: any) => {
+  const handleSlideChange = (swiper: SwiperType) => {
     setCurrentProject(projectDetails[swiper.activeIndex]);
   };
 
   return (
     <>
       <div className="project-section">
-        <div
-          className="overlay"
-          style={{ backgroundImage: `url(${currentProject.backgroundImage})` }}
-        ></div>{" "}
-        {/* Overlay with background image */}
+        {/* Removed overlay background image */}
         <div className="title">
           <h1>Feast Your Eyes on What I've Cooked!</h1>
         </div>

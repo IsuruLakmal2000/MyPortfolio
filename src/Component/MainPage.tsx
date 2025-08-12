@@ -5,24 +5,28 @@ import HeroSection from "./HeroWords";
 import Biorgraphy from "./Biography";
 import Projects from "./Projects";
 import WorkExperience from "./WorkExp";
+import Contact from "./Contact";
+import CursorEffect from "./CursorEffect";
 import "../styles/MainPage.css";
 
 const MainPage: React.FC = () => {
   return (
     <>
+      <CursorEffect />
       <NavBar />
-      <div className="main-page">
+      <div id="home" className="main-page">
         <HeroSection />
       </div>
-      <div className="about-me">
+      <div id="about" className="about-me">
         <Biorgraphy />
       </div>
-      <div>
+      <div id="experience">
         <WorkExperience />
       </div>
-      <div>
+      <div id="projects">
         <Projects />
       </div>
+      <Contact />
     </>
   );
 };

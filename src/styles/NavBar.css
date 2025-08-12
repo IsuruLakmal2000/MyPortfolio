@@ -32,19 +32,27 @@
 }
 
 li,
-a {
+a,
+button {
   text-decoration: none;
   font-size: 20px;
   color: #fff;
-  
 }
-.nav-items li a {
+
+.nav-items li a,
+.nav-items li button {
   text-decoration: none;
- 
+  background: none;
+  border: none;
+  cursor: pointer;
   font-size: 18px; /* Default font size */
   transition: font-size 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+  color: #fff;
+  font-family: inherit;
 }
-.nav-items li a:hover {
+
+.nav-items li a:hover,
+.nav-items li button:hover {
   font-size: 20px; /* Increase font size on hover */
   color: #007bff; /* Optional: Change text color on hover */
 }

@@ -16,3 +16,27 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* Enable smooth scrolling for navigation links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom cursor for main content areas */
+body {
+  cursor: none;
+}
+
+/* Show default cursor on interactive elements and form inputs */
+button, a, input, textarea, select, [contenteditable] {
+  cursor: pointer !important;
+}
+
+input, textarea, select, [contenteditable] {
+  cursor: text !important;
+}
+
+/* Add scroll margin to sections to account for fixed navbar */
+#home, #about, #experience, #projects, #contact {
+  scroll-margin-top: 100px;
+}
