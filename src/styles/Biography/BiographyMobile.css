@@ -12,23 +12,26 @@
   }
 
   .tech-stack {
+    h1 {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+    
     .tech-icon-container {
-      font-size: 30px; /* Slightly smaller icons */
-      flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
-      gap: 10px; /* Reduce the gap between icons */
-      justify-content: center;
-      padding-left: 10px;
-      padding-right: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 15px;
+      padding: 0 20px;
+      
       .card {
-        max-width: 80px; /* Limit width for smaller cards */
-        .subtitle {
-          font-size: 12px; /* Adjust subtitle font size */
+        padding: 15px;
+        
+        .tech-icons {
+          font-size: 40px;
         }
-      }
-      .tech-icons {
-        border: 1px solid #ccc;
-        border-radius: 15%;
-        padding: 7px;
+        
+        .subtitle {
+          font-size: 12px;
+        }
       }
     }
   }
@@ -47,23 +50,26 @@
   }
 
   .tech-stack {
+    h1 {
+      font-size: 24px;
+      margin-bottom: 25px;
+    }
+    
     .tech-icon-container {
-      font-size: 40px; /* Slightly smaller icons */
-      flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
-      gap: 10px; /* Reduce the gap between icons */
-      justify-content: center;
-      padding-left: 10px;
-      padding-right: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+      gap: 12px;
+      padding: 0 15px;
+      
       .card {
-        max-width: 80px; /* Limit width for smaller cards */
-        .subtitle {
-          font-size: 12px; /* Adjust subtitle font size */
+        padding: 12px;
+        
+        .tech-icons {
+          font-size: 36px;
         }
-      }
-      .tech-icons {
-        border: 1px solid #ccc;
-        border-radius: 20%;
-        padding: 10px;
+        
+        .subtitle {
+          font-size: 11px;
+        }
       }
     }
   }
@@ -86,21 +92,26 @@
   }
 
   .tech-stack {
+    h1 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    
     .tech-icon-container {
-      font-size: 30px; /* Slightly smaller icons */
-      flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
-      gap: 10px; /* Reduce the gap between icons */
-      justify-content: center;
+      grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+      gap: 10px;
+      padding: 0 10px;
+      
       .card {
-        max-width: 80px; /* Limit width for smaller cards */
-        .subtitle {
-          font-size: 12px; /* Adjust subtitle font size */
+        padding: 10px;
+        
+        .tech-icons {
+          font-size: 30px;
         }
-      }
-      .tech-icons {
-        border: 1px solid #ccc;
-        border-radius: 20%;
-        padding: 5px;
+        
+        .subtitle {
+          font-size: 10px;
+        }
       }
     }
   }
@@ -124,16 +135,25 @@
   }
 
   .tech-stack {
+    h1 {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    
     .tech-icon-container {
-      font-size: 30px; /* Smaller icons */
-      gap: 8px; /* Smaller gap */
-      .tech-icons {
-        font-size: 40px;
-      }
+      grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+      gap: 8px;
+      padding: 0 5px;
+      
       .card {
-        max-width: 30px; /* Smaller card width */
+        padding: 8px;
+        
+        .tech-icons {
+          font-size: 24px;
+        }
+        
         .subtitle {
-          font-size: 12px; /* Smaller subtitle */
+          font-size: 9px;
         }
       }
     }

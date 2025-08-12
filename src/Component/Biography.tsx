@@ -105,79 +105,77 @@ const Biography: React.FC = () => {
         </div>
 
         <div className="tech-icon-container">
-          <div className="tech-icon-wrapper">
-            <div className="card item1">
-              <FaJava className="tech-icons" />
-              <span className="subtitle">Java</span>
-            </div>
-            <div className="card item2">
-              <DiDatabase className="tech-icons" />
-              <span className="subtitle">MySql</span>
-            </div>
-            <div className="card item3">
-              <DiUnitySmall className="tech-icons" />
-              <span className="subtitle">Unity</span>
-            </div>
-            <div className="card item4">
-              <DiReact className="tech-icons" />
-              <span className="subtitle">React</span>
-            </div>
-            <div className="card item5">
-              <DiNodejs className="tech-icons" />
-              <span className="subtitle">NodeJs</span>
-            </div>
-            <div className="card item6">
-              <DiHtml5 className="tech-icons" />
-              <span className="subtitle">HTML</span>
-            </div>
-            <div className="card item7">
-              <SiFlutter className="tech-icons" />
-              <span className="subtitle">Flutter</span>
-            </div>
-            <div className="card item8">
-              <IoLogoCss3 className="tech-icons" />
-              <span className="subtitle">CSS</span>
-            </div>
-            <div className="card item9">
-              <BsFiletypeScss className="tech-icons" />
-              <span className="subtitle">SCSS</span>
-            </div>
-            <div className="card item10">
-              <IoLogoFirebase className="tech-icons" />
-              <span className="subtitle">Firebase</span>
-            </div>
-            <div className="card item11">
-              <BiLogoSpringBoot className="tech-icons" />
-              <span className="subtitle">Springboot</span>
-            </div>
-            <div className="card item12">
-              <FaAws className="tech-icons" />
-              <span className="subtitle">AWS</span>
-            </div>
-            <div className="card item13">
-              <SiDart className="tech-icons" />
-              <span className="subtitle">Dart</span>
-            </div>
-            <div className="card item14">
-              <DiJavascript1 className="tech-icons" />
-              <span className="subtitle">Javascript</span>
-            </div>
-            <div className="card item15">
-              <SiJira className="tech-icons" />
-              <span className="subtitle">Jira</span>
-            </div>
-            <div className="card item16">
-              <FaGitAlt className="tech-icons" />
-              <span className="subtitle">Git</span>
-            </div>
-            <div className="card item17">
-              <RiAngularjsFill className="tech-icons" />
-              <span className="subtitle">Angular</span>
-            </div>
-            <div className="card item18">
-              <SiPhp className="tech-icons" />
-              <span className="subtitle">Flutter</span>
-            </div>
+          <div className="card item1">
+            <FaJava className="tech-icons" />
+            <span className="subtitle">Java</span>
+          </div>
+          <div className="card item2">
+            <DiDatabase className="tech-icons" />
+            <span className="subtitle">MySql</span>
+          </div>
+          <div className="card item3">
+            <DiUnitySmall className="tech-icons" />
+            <span className="subtitle">Unity</span>
+          </div>
+          <div className="card item4">
+            <DiReact className="tech-icons" />
+            <span className="subtitle">React</span>
+          </div>
+          <div className="card item5">
+            <DiNodejs className="tech-icons" />
+            <span className="subtitle">NodeJs</span>
+          </div>
+          <div className="card item6">
+            <DiHtml5 className="tech-icons" />
+            <span className="subtitle">HTML</span>
+          </div>
+          <div className="card item7">
+            <SiFlutter className="tech-icons" />
+            <span className="subtitle">Flutter</span>
+          </div>
+          <div className="card item8">
+            <IoLogoCss3 className="tech-icons" />
+            <span className="subtitle">CSS</span>
+          </div>
+          <div className="card item9">
+            <BsFiletypeScss className="tech-icons" />
+            <span className="subtitle">SCSS</span>
+          </div>
+          <div className="card item10">
+            <IoLogoFirebase className="tech-icons" />
+            <span className="subtitle">Firebase</span>
+          </div>
+          <div className="card item11">
+            <BiLogoSpringBoot className="tech-icons" />
+            <span className="subtitle">Springboot</span>
+          </div>
+          <div className="card item12">
+            <FaAws className="tech-icons" />
+            <span className="subtitle">AWS</span>
+          </div>
+          <div className="card item13">
+            <SiDart className="tech-icons" />
+            <span className="subtitle">Dart</span>
+          </div>
+          <div className="card item14">
+            <DiJavascript1 className="tech-icons" />
+            <span className="subtitle">Javascript</span>
+          </div>
+          <div className="card item15">
+            <SiJira className="tech-icons" />
+            <span className="subtitle">Jira</span>
+          </div>
+          <div className="card item16">
+            <FaGitAlt className="tech-icons" />
+            <span className="subtitle">Git</span>
+          </div>
+          <div className="card item17">
+            <RiAngularjsFill className="tech-icons" />
+            <span className="subtitle">Angular</span>
+          </div>
+          <div className="card item18">
+            <SiPhp className="tech-icons" />
+            <span className="subtitle">PHP</span>
           </div>
         </div>
       </motion.div>

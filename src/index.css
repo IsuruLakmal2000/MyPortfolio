@@ -17,14 +17,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Enable smooth scrolling for navigation links */
+/* Global dark background for entire website */
 html {
+  background: radial-gradient(circle at center, rgba(20, 20, 30, 1) 0%, rgba(10, 10, 20, 1) 100%) !important;
   scroll-behavior: smooth;
+  min-height: 100vh;
 }
 
-/* Custom cursor for main content areas */
 body {
+  background: radial-gradient(circle at center, rgba(20, 20, 30, 1) 0%, rgba(10, 10, 20, 1) 100%) !important;
+  min-height: 100vh;
+  color: white;
   cursor: none;
+}
+
+/* Ensure the main container also has the dark background */
+#root {
+  background: radial-gradient(circle at center, rgba(20, 20, 30, 1) 0%, rgba(10, 10, 20, 1) 100%);
+  min-height: 100vh;
 }
 
 /* Show default cursor on interactive elements and form inputs */

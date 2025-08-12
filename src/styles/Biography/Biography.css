@@ -8,12 +8,6 @@
   flex-direction: column;
   min-height: 100vh;
   height: auto;
-  background: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 0.8),
-    rgb(0, 0, 0)
-  );
-
   color: white;
   text-align: center;
   width: 100%;
@@ -58,45 +52,64 @@
   }
 }
 .tech-stack {
+  margin-top: 50px;
+  
+  h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #00e1ff;
+  }
+  
   .tech-icon-container {
-    overflow: hidden;
-    padding-left: 100px;
-    padding-right: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    padding: 0 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    
     .card {
       display: flex;
       align-items: center;
       flex-direction: column;
-      position: relative;
-      font-size: 30px;
-      margin: 10px 20px;
-
-      transition: transform 0.3s ease, color 0.3s ease;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+      
+      &:hover {
+        transform: translateY(-5px);
+        background: rgba(0, 225, 255, 0.1);
+        border-color: #00e1ff;
+        box-shadow: 0 10px 30px rgba(0, 225, 255, 0.2);
+      }
+      
+      .tech-icons {
+        font-size: 48px;
+        margin-bottom: 12px;
+        color: #00e1ff;
+        transition: color 0.3s ease;
+      }
+      
       .subtitle {
-        font-size: 20px;
-        font-weight: normal;
+        font-size: 14px;
+        font-weight: 600;
+        color: white;
+        text-align: center;
+        margin: 0;
       }
     }
-
-    .card:hover {
-      transform: scale(1.2);
-      color: aqua;
-
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for emphasis */
-    }
-
-    .tech-icons {
-      border: 2px solid #ccc;
-      border-radius: 20%;
-      padding: 20px;
+    
+    .card:hover .tech-icons {
+      color: #ffffff;
     }
   }
 }
 
-.tech-icon-wrapper {
-  display: ruby;
-}
+
 
 @keyframes scroll {
   0% {
