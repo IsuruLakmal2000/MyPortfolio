@@ -28,7 +28,6 @@ body {
   background: radial-gradient(circle at center, rgba(20, 20, 30, 1) 0%, rgba(10, 10, 20, 1) 100%) !important;
   min-height: 100vh;
   color: white;
-  cursor: none;
 }
 
 /* Ensure the main container also has the dark background */

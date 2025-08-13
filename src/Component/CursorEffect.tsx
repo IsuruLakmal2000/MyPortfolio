@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import '../styles/CursorEffect.css';
 
 const CursorEffect: React.FC = () => {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [mousePosition, setMousePosition] = useState({ x: window.innerWidth / 2, y: window.innerHeight / 2 });
   const [isMoving, setIsMoving] = useState(false);
   const [isHovering, setIsHovering] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
