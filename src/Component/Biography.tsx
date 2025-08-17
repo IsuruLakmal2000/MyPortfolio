@@ -104,7 +104,7 @@ const Biography: React.FC = () => {
           <h1>Technologies</h1>
         </div>
 
-        <div className="tech-icon-container">
+        <div className="tech-icon-container" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center' }}>
           <div className="card item1">
             <FaJava className="tech-icons" />
             <span className="subtitle">Java</span>

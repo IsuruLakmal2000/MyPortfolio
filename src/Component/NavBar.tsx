@@ -21,6 +21,9 @@ const NavBar: React.FC = () => {
             <button onClick={() => handleSmoothScroll('home')}>Home</button>
           </li>
           <li>
+            <button onClick={() => handleSmoothScroll('about')}>About</button>
+          </li>
+          <li>
             <button onClick={() => handleSmoothScroll('projects')}>Projects</button>
           </li>
           <li>

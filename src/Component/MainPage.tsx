@@ -26,7 +26,9 @@ const MainPage: React.FC = () => {
       <div id="projects">
         <Projects />
       </div>
-      <Contact />
+      <div id="contact">
+        <Contact />
+      </div>
     </>
   );
 };

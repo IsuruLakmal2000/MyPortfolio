@@ -1,34 +1,44 @@
 .navbar {
-  margin-top: 20px;
-  background-color: rgba(255, 255, 255, 0);
-  position: absolute;
-  width: 100%; /* Ensure the navbar spans the full width */
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100%;
   top: 0;
+  left: 0;
   z-index: 1000;
-  text-align: center; /* Center the content inside the navbar */
+  text-align: center;
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); 
-  
+  -webkit-backdrop-filter: blur(10px);
+  padding: 10px 0;
+  transition: all 0.3s ease;
 }
 
 .nav-items {
-  display: inline-flex; /* Change to inline-flex to respect text alignment */
+  display: inline-flex;
   list-style-type: none;
-  margin: 0 auto; /* Center the nav-items horizontally */
-  padding: 15px;
+  margin: 0 auto;
+  padding: 12px 20px;
   justify-content: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.322); /* Optional: Add a subtle shadow */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.322);
   background-color: rgba(0, 255, 255, 0.096);
   border-radius: 25px;
-
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  max-width: 600px;
+  width: auto;
 }
 
 .nav-items li {
-  margin: 0 20px; /* Equal gap between items */
-  
+  margin: 0 15px;
+}
+
+@media (max-width: 768px) {
+  .nav-items li {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-items li {
+    margin: 0 8px;
+  }
 }
 
 li,
@@ -45,36 +55,106 @@ button {
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 18px; /* Default font size */
-  transition: font-size 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+  font-size: 18px;
+  transition: font-size 0.3s ease, color 0.3s ease;
   color: #fff;
   font-family: inherit;
+  padding: 8px 12px;
+  border-radius: 15px;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .nav-items li a,
+  .nav-items li button {
+    font-size: 16px;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-items li a,
+  .nav-items li button {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
 }
 
 .nav-items li a:hover,
 .nav-items li button:hover {
-  font-size: 20px; /* Increase font size on hover */
-  color: #007bff; /* Optional: Change text color on hover */
+  font-size: 20px;
+  color: #FFC107; /* Yellow amber color */
+  font-weight: bolder;
 }
+
+.nav-items li a:hover {
+  color: #ffd700;
+  background-color: rgba(255, 215, 0, 0.1);
+}
+
 .empty {
   color: #fff;
   margin-right: 40px;
 }
 
-.nav-items li a:hover {
-  color: #ffd700;
-}
-
-/* For very small screens (e.g., <480px) */
+/* Responsive styles */
 @media (max-width: 768px) {
+  .navbar {
+    padding: 8px 0;
+  }
+  
+  .nav-items {
+    padding: 10px 15px;
+    margin: 0 10px;
+  }
+  
+  .nav-items li {
+    margin: 0 10px;
+  }
+  
+  .nav-items li a,
+  .nav-items li button {
+    font-size: 16px;
+    padding: 6px 10px;
+  }
+  
+  .nav-items li a:hover,
+  .nav-items li button:hover {
+    font-size: 18px;
+  }
+  
   .site-logo {
     display: none;
   }
-  .navbar {
-    display: flex;
-    justify-content: center;
-  }
+  
   .empty {
     display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 5px 0;
+  }
+  
+  .nav-items {
+    padding: 8px 10px;
+    margin: 0 5px;
+    border-radius: 20px;
+  }
+  
+  .nav-items li {
+    margin: 0 5px;
+  }
+  
+  .nav-items li a,
+  .nav-items li button {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+  
+  .nav-items li a:hover,
+  .nav-items li button:hover {
+    font-size: 16px;
   }
 }
