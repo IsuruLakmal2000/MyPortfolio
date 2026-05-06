@@ -16,10 +16,19 @@ const Contact: React.FC = () => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleEmailSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // You can add form submission logic here
-    alert("Thank you for your message! I'll get back to you soon.");
+    const formData = new FormData(e.currentTarget);
+    const name = String(formData.get("name") || "").trim();
+    const subject = String(formData.get("subject") || "").trim();
+    const message = String(formData.get("message") || "").trim();
+    const finalSubject = subject || "Portfolio Inquiry";
+    const body = `Name: ${name}\n\nMessage:\n${message}`;
+    const mailtoLink = `mailto:isurulakmalid13@gmail.com?subject=${encodeURIComponent(
+      finalSubject
+    )}&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailtoLink;
   };
 
   return (
@@ -51,8 +60,8 @@ const Contact: React.FC = () => {
               <div className="contact-item">
                 <FaPhone className="contact-icon" />
                 <div>
-                  <h3>Phone</h3>
-                  <p>+94 70 123 4567</p>
+                  <h3>Whatsapp</h3>
+                  <p>+94 78 55 22 049</p>
                 </div>
               </div>
               <div className="contact-item">
@@ -67,13 +76,15 @@ const Contact: React.FC = () => {
 
           <motion.div className="contact-form" variants={fadeInVariants}>
             <h2>Send a Message</h2>
-            <form onSubmit={handleSubmit}>
-              <div className="form-row">
-                <input type="text" placeholder="Your Name" required />
-                <input type="email" placeholder="Your Email" required />
-              </div>
-              <input type="text" placeholder="Subject" required />
-              <textarea placeholder="Your Message" rows={5} required></textarea>
+            <form onSubmit={handleEmailSubmit}>
+              <input name="name" type="text" placeholder="Your Name" required />
+              <input name="subject" type="text" placeholder="Subject" required />
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                rows={5}
+                required
+              ></textarea>
               <button type="submit" className="send-button">
                 Send Message
               </button>

@@ -11,29 +11,18 @@
     font-size: 16px;
   }
 
-  .tech-stack {
-    h1 {
-      font-size: 28px;
-      margin-bottom: 30px;
-    }
-    
-    .tech-icon-container {
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-      gap: 15px;
-      padding: 0 20px;
-      
-      .card {
-        padding: 15px;
-        
-        .tech-icons {
-          font-size: 40px;
-        }
-        
-        .subtitle {
-          font-size: 12px;
-        }
-      }
-    }
+  .about-section {
+    padding: 0 20px;
+    grid-template-columns: minmax(200px, 280px) 1fr;
+    gap: 30px;
+  }
+
+  .about-content h1 {
+    font-size: 30px;
+  }
+
+  .about-content p {
+    font-size: 16px;
   }
 }
 @media (max-width: 1024px) {
@@ -49,29 +38,18 @@
     font-size: 15px; /* Reduce font size for smaller screens */
   }
 
-  .tech-stack {
-    h1 {
-      font-size: 24px;
-      margin-bottom: 25px;
-    }
-    
-    .tech-icon-container {
-      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-      gap: 12px;
-      padding: 0 15px;
-      
-      .card {
-        padding: 12px;
-        
-        .tech-icons {
-          font-size: 36px;
-        }
-        
-        .subtitle {
-          font-size: 11px;
-        }
-      }
-    }
+  .about-section {
+    padding: 0 20px;
+    grid-template-columns: minmax(180px, 240px) 1fr;
+    gap: 24px;
+  }
+
+  .about-content h1 {
+    font-size: 26px;
+  }
+
+  .about-content p {
+    font-size: 15px;
   }
 
   .custom-icon {
@@ -91,29 +69,28 @@
     font-size: 16px; /* Reduce font size for smaller screens */
   }
 
-  .tech-stack {
-    h1 {
-      font-size: 20px;
-      margin-bottom: 20px;
-    }
-    
-    .tech-icon-container {
-      grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
-      gap: 10px;
-      padding: 0 10px;
-      
-      .card {
-        padding: 10px;
-        
-        .tech-icons {
-          font-size: 30px;
-        }
-        
-        .subtitle {
-          font-size: 10px;
-        }
-      }
-    }
+  .about-section {
+    padding: 0 20px;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    text-align: center;
+  }
+
+  .about-image {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+
+  .about-content {
+    text-align: center;
+  }
+
+  .about-content h1 {
+    font-size: 22px;
+  }
+
+  .about-content p {
+    font-size: 15px;
   }
 
   .custom-icon {
@@ -134,29 +111,21 @@
     font-size: 12px; /* Further reduce font size */
   }
 
-  .tech-stack {
-    h1 {
-      font-size: 18px;
-      margin-bottom: 15px;
-    }
-    
-    .tech-icon-container {
-      grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
-      gap: 8px;
-      padding: 0 5px;
-      
-      .card {
-        padding: 8px;
-        
-        .tech-icons {
-          font-size: 24px;
-        }
-        
-        .subtitle {
-          font-size: 9px;
-        }
-      }
-    }
+  .about-section {
+    padding: 0 16px;
+    gap: 16px;
+  }
+
+  .about-image {
+    max-width: 220px;
+  }
+
+  .about-content h1 {
+    font-size: 20px;
+  }
+
+  .about-content p {
+    font-size: 13px;
   }
 
   .custom-icon {

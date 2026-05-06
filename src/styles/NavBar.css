@@ -106,6 +106,9 @@ button {
   .nav-items {
     padding: 10px 15px;
     margin: 0 10px;
+    max-width: 100%;
+    flex-wrap: wrap;
+    row-gap: 6px;
   }
   
   .nav-items li {

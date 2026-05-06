@@ -145,6 +145,14 @@
     gap: 0px;
   }
 
+  .first-row,
+  .second-row,
+  .third-row,
+  .fourth-row {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
   .big-text {
     font-size: 40px;
   }
@@ -167,6 +175,9 @@
   .social-links {
     flex-direction: row;
     gap: 10px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .icon {

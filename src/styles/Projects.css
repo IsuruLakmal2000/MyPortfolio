@@ -7,6 +7,7 @@
   position: relative;
   min-height: 100vh;
   height: auto;
+  overflow: hidden;
 
   .double-side {
     width: 100%;
@@ -16,6 +17,25 @@
     justify-content: space-between;
     gap: 0px;
   }
+}
+
+.project-section .title,
+.project-section .double-side {
+  position: relative;
+  z-index: 1;
+}
+
+.project-bg-number {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 440px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.05);
+  letter-spacing: 6px;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
 }
 .title {
   margin-top: 0px;
@@ -37,11 +57,15 @@
   width: 50%;
   padding-left: 50px;
   padding-right: 50px;
+  position: relative;
+  overflow: hidden;
   .about-project {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    position: relative;
+    z-index: 1;
   }
 
   .title {
@@ -65,6 +89,25 @@
     color: aqua;
     font-weight: bolder;
   }
+}
+
+.project-bg-title {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  font-size: 240px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.04);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  line-height: 0.9;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .left-side {
@@ -143,14 +186,29 @@
   }
 
   .swiper-slide:nth-child(9n) {
-    background-color: rgb(218, 12, 218);
+    background-image: url("../assets/projects/talentphiere.png");
+    border: 2px solid;
+    background-size: cover;
+    border-color: rgb(0, 225, 255);
   }
 
   .swiper-slide:nth-child(10n) {
+    background-image: url("../assets/projects/qrsystem.png");
+    border: 2px solid;
+    background-size: cover;
+    border-color: rgb(255, 208, 0);
   }
 }
 
 @media (max-width: 1500px) {
+  .project-bg-number {
+    font-size: 360px;
+  }
+
+  .project-bg-title {
+    font-size: 180px;
+  }
+
   .left-side .swiper {
     width: 400px;
     height: 550px;
@@ -170,6 +228,15 @@
 }
 
 @media (max-width: 1024px) {
+  .project-bg-number {
+    font-size: 280px;
+  }
+
+  .project-bg-title {
+    font-size: 140px;
+    text-align: center;
+  }
+
   .double-side {
     display: flex;
     flex-direction: column;
@@ -212,6 +279,39 @@
 }
 
 @media (max-width: 768px) {
+  .project-section {
+    padding: 20px 10px;
+  }
+
+  .project-bg-number {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .right-side {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .right-side .about-project {
+    align-items: center;
+    text-align: center;
+  }
+
+  .left-side {
+    padding: 10px;
+  }
+
+  .project-bg-number {
+    font-size: 220px;
+  }
+
+  .project-bg-title {
+    font-size: 108px;
+    bottom: -6px;
+  }
+
   .left-side .swiper {
     height: 250px;
     width: 300px;

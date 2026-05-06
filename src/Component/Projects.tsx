@@ -15,6 +15,8 @@ import legacy from "../assets/projects/legacy defenders.jpg";
 import onlinecheck from "../assets/projects/online checking.jpg";
 import organic from "../assets/projects/organic-quest.png";
 import osindi from "../assets/projects/osindi.jpg";
+import qrsystem from "../assets/projects/qrsystem.png";
+import talentphiere from "../assets/projects/talentphiere.png";
 import water from "../assets/projects/water.jpg";
 const projectDetails = [
   {
@@ -93,18 +95,42 @@ const projectDetails = [
     technology: " Unity game engine",
     backgroundImage: legacy,
   },
+  {
+    title: "Talentphiere Outsourcing Platform",
+    subtitle: "Outsourcing platform for a German client",
+    description:
+      "Built an outsourcing platform to connect teams and manage client work, focusing on reliable delivery and smooth collaboration for a German client.",
+    backgroundColor: "rgb(10, 184, 111)",
+    technology: " React, CSS, Tailwind, SQL",
+    backgroundImage: talentphiere,
+  },
+  {
+    title: "Restaurant QR & Ordering System",
+    subtitle: "Digital menu and QR ordering platform",
+    description:
+      "Web and mobile platform where customers scan a QR code to view a digital menu and order directly. Staff use a mobile POS to manage incoming orders, while customers receive realtime updates until preparation and service.",
+    backgroundColor: "rgb(211, 122, 7)",
+    technology: " React, Firestore, Remote Configs, SQLite, Flutter",
+    backgroundImage: qrsystem,
+  },
   // Add more projects as needed...
 ];
 const Projects: React.FC = () => {
   const [currentProject, setCurrentProject] = useState(projectDetails[0]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const projectNumber = String(currentIndex + 1).padStart(2, "0");
 
   const handleSlideChange = (swiper: SwiperType) => {
     setCurrentProject(projectDetails[swiper.activeIndex]);
+    setCurrentIndex(swiper.activeIndex);
   };
 
   return (
     <>
       <div className="project-section">
+        <div className="project-bg-number" aria-hidden="true">
+          {projectNumber}
+        </div>
         {/* Removed overlay background image */}
         <div className="title">
           <h1>Feast Your Eyes on What I've Cooked!</h1>
@@ -127,6 +153,9 @@ const Projects: React.FC = () => {
           </div>
 
           <div className="right-side">
+            <div className="project-bg-title" aria-hidden="true">
+              {projectNumber}
+            </div>
             <div className="about-project">
               <div className="title">
                 <h1>{currentProject.title}</h1>
