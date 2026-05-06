@@ -99,6 +99,12 @@ const Biography: React.FC = () => {
         </div>
         <div className="about-content">
           <h1>About Me</h1>
+          <div className="about-tags">
+            <span>Web Apps</span>
+            <span>Mobile Apps</span>
+            <span>Automation</span>
+            <span>Product Delivery</span>
+          </div>
           <p>
             I am Isuru, a software developer focused on building reliable web and
             mobile experiences. I enjoy turning ideas into clean, maintainable
@@ -110,6 +116,11 @@ const Biography: React.FC = () => {
             features that increase engagement. My focus is measurable results:
             faster operations, better customer experience, and scalable systems.
           </p>
+          <ul className="about-highlights">
+            <li>Discovery to launch delivery with clean UX.</li>
+            <li>Automation and integrations that cut manual work.</li>
+            <li>Scalable systems with measurable performance.</li>
+          </ul>
         </div>
       </motion.div>
 

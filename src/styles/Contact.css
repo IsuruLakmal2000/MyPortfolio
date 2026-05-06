@@ -20,8 +20,9 @@
 .contact-header h1 {
   font-size: 48px;
   margin-bottom: 20px;
-  color: #00e1ff;
-  font-weight: bold;
+  color: #ffd369;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 .contact-header p {
